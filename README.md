@@ -1,47 +1,19 @@
-# 🦔 Assembly Course — Programs completed in the course "Assembly language"
+# Assembly course
 
-## Short description
+Eleven labs, from a first DOS program to disassembling a protected binary. The early ones
+target 16-bit real mode and talk to the machine through DOS interrupts, the later ones move
+to 32-bit Windows and to assembly called from C++.
 
-### [📎 Lab_01:](lab_01)
-
-    Hello, World! — first program in assembly: printing a string via INT 21h (DOS)
-
-### [📎 Lab_02:](lab_02)
-
-    Segments, stack and message output — basic language constructions
-
-### [📎 Lab_03:](lab_03)
-
-    Multi-module program — splitting code into modules (EXTRN/PUBLIC), data exchange between segments
-
-### [📎 Lab_04:](lab_04)
-
-    Working with a 9×9 matrix — input, transformation and output with dynamic memory allocation
-
-### [📎 Lab_05:](lab_05)
-
-    Multi-file menu — 16-bit number input, output in different number systems, array of pointers to subroutines
-
-### [📎 Lab_06:](lab_06)
-
-    Resident TSR program — intercepting INT 08h (timer), changing keyboard auto-repeat speed via port 60h
-
-### [📎 Lab_07:](lab_07)
-
-    String operations — own strcpy implementation in assembly, called from C++
-
-### [📎 Lab_08:](lab_08)
-
-    Math on assembly — computing sin(x) and operations via FPU/x87, integration with C++
-
-### [📎 Lab_09:](lab_09)
-
-    Performance comparison — assembly vs C++ (1e7 iterations, time measurement)
-
-### [📎 Lab_10:](lab_10)
-
-    Windows GUI — windowed application on MASM32 (WinAPI: window, buttons, input fields, handlers)
-
-### [📎 Lab_11:](lab_11)
-
-    Reverse engineering — disassembling a protected crackme.exe (29 procedures, PE analysis)
+| Lab | Topic |
+|-----|-------|
+| [lab_01](lab_01) | Printing a string through `INT 21h` |
+| [lab_02](lab_02) | Segments, stack and message output |
+| [lab_03](lab_03) | A multi-module program, data exchange between segments |
+| [lab_04](lab_04) | A 9×9 matrix with dynamic memory allocation |
+| [lab_05](lab_05) | Menu-driven 16-bit input, output in several number systems, a table of subroutine pointers |
+| [lab_06](lab_06) | A resident program hooking `INT 08h` and changing the key repeat rate through port 60h |
+| [lab_07](lab_07) | `strcpy` written in assembly and called from C++ |
+| [lab_08](lab_08) | `sin(x)` on the x87 FPU, integrated with C++ |
+| [lab_09](lab_09) | Assembly against C++ over 10⁷ iterations, with timing |
+| [lab_10](lab_10) | A windowed MASM32 application on WinAPI |
+| [lab_11](lab_11) | Reverse engineering a protected `crackme.exe`, 29 procedures, PE analysis |
